@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Random Thoughts]]></title>
+  <link href="http://prathamesh-sonpatki.github.com/atom.xml" rel="self"/>
+  <link href="http://prathamesh-sonpatki.github.com/"/>
+  <updated>2012-03-20T18:11:43+05:30</updated>
+  <id>http://prathamesh-sonpatki.github.com/</id>
+  <author>
+    <name><![CDATA[Prathamesh Sonpatki]]></name>
+    <email><![CDATA[csonpatki@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+
+</feed>
