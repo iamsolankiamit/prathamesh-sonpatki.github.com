@@ -4,7 +4,7 @@
   <title><![CDATA[Random Thoughts]]></title>
   <link href="http://prathamesh-sonpatki.github.com/atom.xml" rel="self"/>
   <link href="http://prathamesh-sonpatki.github.com/"/>
-  <updated>2012-03-20T18:16:59+05:30</updated>
+  <updated>2012-03-21T03:36:58+05:30</updated>
   <id>http://prathamesh-sonpatki.github.com/</id>
   <author>
     <name><![CDATA[Prathamesh Sonpatki]]></name>
@@ -12,5 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+
+  <entry>
+    <title type="html"><![CDATA[RubyConfIndia2012]]></title>
+    <link href="http://prathamesh-sonpatki.github.com/blog/2012/03/21/rubyconfindia2012/"/>
+    <updated>2012-03-21T03:07:00+05:30</updated>
+    <id>http://prathamesh-sonpatki.github.com/blog/2012/03/21/rubyconfindia2012</id>
+    <content type="html"><![CDATA[<p><img src="http://rubyconfindia.org/2012/assets/badges/attendee.png" alt="I am attending RubyConf India 2012" /></p>
+
+<hr />
+
+<p>I am attending <a href="http://rubyconfindia.org/2012">RubyConfIndia</a> from 24th to 25th March 2012 in Pune.</p>
+
+<p>Are you coming ?</p>
+]]></content>
+  </entry>
 
 </feed>
