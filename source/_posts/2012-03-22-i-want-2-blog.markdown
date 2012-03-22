@@ -1,0 +1,47 @@
+---
+layout: post
+title: "i-want-2-blog"
+date: 2012-03-22 07:08
+comments: true
+categories: ['octopress','blog','ruby']
+---
+
+I was introduced to Octopress by [Vedang Manerikar](http://vedang.me) in his talk on emacs.
+I wanted to have a blog for long time but wanted something new, fresh and Octopress is just that.
+
+If you want to learn about basic rake tasks, markdown, git etc; Octopress is just for you :)
+
+### Octopress : Blogging using Git, Github, Ruby
+
+Octopress is a framework designed  for [Jekyll](https://github.com/mojombo/jekyll), the blog aware static site generator powering Github Pages by [Brandon Mathis](https://github.com/imathis/).
+Detail features are available @ [here](https://github.com/imathis/octopress/)
+
+### Getting Started
+This tutorial is only for *nix like systems :D
+#### Before You Begin
+You will need to install [git](git-scm.com/) and setup your ruby enviornment
+Octopress requires Ruby 1.9.2 wich you can easily install with [RVM](https://beginrescueend.com/).
+#### Get source and install initial dependancies
+
+{% codeblock Download source from Github  %}
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+{% endcodeblock %}
+
+Now install dependancies
+
+{% codeblock %}
+gem install bundler
+bundle install
+{% endcodeblock %}
+
+Install the default Octopress theme.
+
+{% codeblock %}
+bundle exec rake install
+{% endcodeblock %}
+
+A Detailed explanation about bundler is found [here](http://gembundler.com/rationale.html)
+
+#### Configure your blog
