@@ -45,3 +45,66 @@ bundle exec rake install
 A Detailed explanation about bundler is found [here](http://gembundler.com/rationale.html)
 
 #### Configure your blog
+
+You have to change following fields from _config.yml
+
+{% codeblock %}
+ url:                # For rewriting urls for RSS, etc
+ title:              # Used in the header and title tags
+ subtitle:           # A description used in the header
+ author:             # Your name, for RSS, Copyright, Metadata
+ simple_search:      # Search engine for simple site search
+ description:        # A default meta description for your site
+ subscribe_rss:      # Url for your blog's feed, defauts to /atom.xml
+ subscribe_email:    # Url to subscribe by email (service required)
+ email:              # Email address for the RSS feed if you want it.
+{% endcodeblock %}
+
+#### Spice it up with twitter and other 3rd party plugins
+
+Simply fill in the configurations which are already generated like your twitter id , github handle etc;
+
+
+The Octopress layouts read these configurations and only include the javascript and html necessary for the enabled services.
+
+
+### Get started with blogging
+
+Octopress provides some [rake](http://martinfowler.com/articles/rake.html) tasks for creating new posts
+
+{% codeblock %}
+
+bundle exec rake new_post["title"]
+{% endcodeblock %}
+
+The default file extension for new posts is markdown.
+
+This is an example from my first post
+{% codeblock %}
+
+---
+layout: post
+title: "RubyConfIndia2012"
+date: 2012-03-21 03:07
+comments: true
+categories:
+---
+{% endcodeblock %}
+
+#### Generate and Deploy
+
+{% codeblock %}
+
+bundle exec rake generate   # Generates posts and pages into the public directory
+bundle exec rake watch      # Watches source/ and sass/ for changes and regenerates
+bundle exec rake preview    # Watches, and mounts a webserver at http://localhost:4000
+bundle exec rake deploy
+{% endcodeblock %}
+
+### Further Reading
+
+I haven't covered all points because i don't know them :) .
+
+You can get better help @ [octopress home page](http://octopress.org/)
+
+Octopress is great asset with good documentation available so it's good tool to blog.
