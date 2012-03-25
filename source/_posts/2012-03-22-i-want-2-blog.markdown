@@ -20,7 +20,7 @@ Detail features are available @ [here](https://github.com/imathis/octopress/)
 This tutorial is only for *nix like systems :D
 #### Before You Begin
 You will need to install [git](git-scm.com/) and setup your ruby enviornment
-Octopress requires Ruby 1.9.2 wich you can easily install with [RVM](https://beginrescueend.com/).
+Octopress requires Ruby 1.9.2 which you can easily install with [RVM](https://beginrescueend.com/).
 #### Get source and install initial dependancies
 
 {% codeblock Download source from Github  %}
