@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://prathamesh-sonpatki.github.com
-title: Random Thoughts
-subtitle: My way of looking at life
+title: mindlog
+subtitle: ....
 author: Prathamesh Sonpatki
 simple_search: http://google.com/search
-description:
+description: Where Prathamesh Sonpatki puts his thoughts
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -64,7 +64,11 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: "csonpatki"
+twitter_tweet_count: 4
+twitter_show_replies: false
+twitter_follow_button: true
+twitter_show_follower_count: false
 twitter_tweet_button: true
 
 # Google +1
