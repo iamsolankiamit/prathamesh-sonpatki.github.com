@@ -1,0 +1,39 @@
+---
+layout: post
+title: "SICP Exercise 1-3"
+date: 2013-02-07 22:26
+comments: true
+categories: sicp, lisp, scheme
+---
+
+> ##### Define a procedure that takes three numbers as arguments and returns the sum of squares of the two larger numbers
+
+I broke this problem into *3 steps* 
+
+
+Define a `square` function which will take one argument and return
+its square.
+    
+    (define (square x) (* x x))
+    ; (square 6) 36
+
+Define a `sum-of-squares` function which will take two arguments and calculate sum of their squares.
+
+    (define (sum-of-squares x y) (+ (square x) (square y)))
+    ; (sum-of-squares 3 4) 25
+
+Define a `max` function which will take two numbers and return maximum of both numbers.
+
+    (define (max x y) (if (> x y) x y))
+    ; (max 3 4) 4
+
+Now the solution to the problem is just combine all the 3 subproblems
+into one.
+
+    (define (sum-of-squares-of-2-larger x y z)
+        (sum-of-squares (max x y) (max y z))
+    )
+    ; (sum-of-squares-of-2-larger 1 2 3) 13
+    ; (sum-of-squares-of-2-larger 5 4 3) 41
+
+> SICP chapter 1 tells about how problems can be solved by breaking them into smaller subproblems and then building from them and solving bigger problems.
