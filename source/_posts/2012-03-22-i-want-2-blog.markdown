@@ -11,6 +11,8 @@ I wanted to have a blog for long time but wanted something new, fresh and Octopr
 
 If you want to learn about basic rake tasks, markdown, git etc; Octopress is just for you :)
 
+<!-- more -->
+
 ### Octopress : Blogging using Git, Github, Ruby
 
 Octopress is a framework designed  for [Jekyll](https://github.com/mojombo/jekyll), the blog aware static site generator powering Github Pages by [Brandon Mathis](https://github.com/imathis/).

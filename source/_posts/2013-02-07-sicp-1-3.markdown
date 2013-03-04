@@ -10,6 +10,7 @@ categories: sicp, lisp, scheme
 
 I broke this problem into *3 steps*
 
+<!-- more -->
 
 Define a `square` function which will take one argument and return
 its square.
@@ -29,6 +30,7 @@ Define a `max` function which will take two numbers and return maximum of both n
 
 Now the solution to the problem is just combine all the 3 subproblems
 into one.
+
 
 ###### `EDIT:` In my earlier logic, i had a flaw. I was just passing `(max x y)` `(max y z)` to the `sum-of-squares` function. Thanks to [Ankur](https://twitter.com/AnkurGel) for pointing out the mistake. The second argument actually depends on the result of `(max x y)`.
 

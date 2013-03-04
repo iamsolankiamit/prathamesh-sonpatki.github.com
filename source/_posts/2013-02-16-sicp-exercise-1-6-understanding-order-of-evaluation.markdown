@@ -10,6 +10,8 @@ SICP Exercise 1.6 is very interesting. I found it difficult to understand the pr
 
 In section 1.1.7 we define a function to calculate square root of a number by Newton's method of successive approximation.
 
+<!-- more -->
+
 ``` scheme Newton's method of successive approximation for finding square root of a number
 
 (define (square x)
