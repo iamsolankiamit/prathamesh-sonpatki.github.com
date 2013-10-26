@@ -3,7 +3,7 @@ layout: post
 title: "Using `rails-api` with Rails 3"
 date: 2013-06-30 11:31
 comments: true
-categories: 
+categories:
 ---
 
 
@@ -20,14 +20,16 @@ What if you want to use `rails-api` with `Rails 3`?
 Thanks to [@steveklanik](https://twitter.com/steveklabnik) for
 answering my doubt.
 
+<!-- more -->
+
 You have to just specify in the Gemfile that you want `3.2.13 versions`
 of gems that `rails-api` depends on.
 
-For example - 
- 
+For example -
+
 ```ruby
   gem 'rails-api'               # for Rails API
-  gem 'actionpack', '3.2.13'    # Specifically say you want '3.2.13' 
+  gem 'actionpack', '3.2.13'    # Specifically say you want '3.2.13'
   # rails-api depends on actionpack.
   # only specifying actionpack dependency is enough.
 

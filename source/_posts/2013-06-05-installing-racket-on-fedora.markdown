@@ -3,7 +3,7 @@ layout: post
 title: "Installing racket on fedora"
 date: 2013-06-05 21:45
 comments: true
-categories: 
+categories:
 ---
 
 As root user
@@ -19,12 +19,14 @@ As root user
     EOF
 ```
 
-Then 
+Then
 
 ``` bash
     yum update
     yum install racket
 ```
+
+<!-- more -->
 
 To run racket from Emacs, enable marmalade repo
 

@@ -23,6 +23,7 @@ We can achieve this using simple if/unless.
     condition.where("created_at > ?", from) unless from.blank?
   end
 ```
+<!-- more -->
 
 This works but doesn't look good. If we can chain this second
 conditional scope, it would be much better.

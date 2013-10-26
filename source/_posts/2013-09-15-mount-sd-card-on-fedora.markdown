@@ -19,6 +19,8 @@ Without SD card, i couldn't do anything. After googling, i found out
 that you have to install `kmod-staging` package. It is available as
 part of `rpmfusion` repo.
 
+<!-- more -->
+
 After that, next part was to find out your driver for SD card reader
 
 ``` sh

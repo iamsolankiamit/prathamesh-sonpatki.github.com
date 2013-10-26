@@ -13,6 +13,8 @@ works great.
 Our app has multiple subdomains for all clients, so i wanted to
 callback URLs separate for each client.
 
+<!-- more -->
+
 For example,
 
 For `foo.example.com`, callback should be `http://foo.example.com/auth/facebook`
