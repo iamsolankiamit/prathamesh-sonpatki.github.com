@@ -18,7 +18,7 @@ For eg. apply timeframe condition if timeframe is given in params.
 We can achieve this using simple if/unless.
 
 ``` ruby
-  def most_recent(from=nil, to=Date.today)
+  def most_recent(from = nil, to = Date.today)
     condition = Activity.where("created_at < ?", to)
     condition.where("created_at > ?", from) unless from.blank?
   end
@@ -43,8 +43,8 @@ condition is satisfied. It will return `nil` otherwise resulting in a
 `no-op`.
 
 ``` ruby
-  def most_recent(from=nil, to=Date.today)
-    Activity.where("created_at < ?", to).where(from_condition)
+  def most_recent(from = nil, to = Date.today)
+    Activity.where("created_at < ?", to).where(from_condition(from))
   end
 ```
 
