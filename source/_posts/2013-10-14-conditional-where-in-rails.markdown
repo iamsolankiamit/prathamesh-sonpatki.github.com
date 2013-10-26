@@ -8,7 +8,7 @@ categories: rails ruby Arel activerecord
 
 ### T.L.D.R
 
-You can pass `blank` value to `where` clause and it will return
+You can pass `blank` object to `where` clause and it will return
 current relation as it is.
 
 
