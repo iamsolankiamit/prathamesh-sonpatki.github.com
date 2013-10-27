@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "preload associations with find_by_sql"
+title: "preload associations with `find_by_sql`"
 date: 2013-10-26 16:36
 comments: true
 categories: rails activerecord fun
