@@ -30,6 +30,8 @@ from ruby object.
 
 But this doesn't work with `find_by_sql`.
 
+<!-- more -->
+
 ``` ruby
 @users = User.find_by_sql(some_condition).includes(:company)
 ```
