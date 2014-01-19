@@ -128,6 +128,6 @@ to parse it to update the database. With `bounced_email` we got some
 more relevant information for free :)
 
 #### References :
-  http://keakaj.com/wisdom/2007/08/08/verp-on-rails/
-  http://blog.sosedoff.com/2011/08/10/processing-emails-with-postfix-and-rails/
-  https://github.com/mitio/bounce_email
+  * http://keakaj.com/wisdom/2007/08/08/verp-on-rails/
+  * http://blog.sosedoff.com/2011/08/10/processing-emails-with-postfix-and-rails/
+  * https://github.com/mitio/bounce_email
