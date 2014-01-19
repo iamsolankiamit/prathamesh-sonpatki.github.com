@@ -108,7 +108,6 @@ And Ruby script looked like
       def initialize(content)
       Resque.enqueue_to(:bounced_email_receiver, 'BouncedEmailReceiver', content)
     end
-    end
     
     BouncedEmail.new($stdin.read)
 ```
