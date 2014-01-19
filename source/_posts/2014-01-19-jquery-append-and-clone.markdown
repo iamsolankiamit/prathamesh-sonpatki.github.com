@@ -29,6 +29,8 @@ On a click event, i wanted to append `contacts_list` to
 But every time, the original `updated_contacts` from `container` was
 getting removed.
 
+<!-- more -->
+
 After searching [documentation](http://api.jquery.com/append/) of
 `append` method, i found out that when an element is inserted to some
 other part of DOM, it is removed from the original location.
