@@ -114,7 +114,7 @@ And Ruby script looked like
 
 We had to go in 2 steps here because we had multiple apps using multiple
 rubies on same server. If you have only one ruby then you can make a
-executable ruby script instead of shell script which decides wchich
+executable ruby script instead of shell script which decides which
 ruby to use.
 
 
