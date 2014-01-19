@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "verp on rails"
+title: "VERP on Rails"
 date: 2014-01-19 15:50:29 +0530
 comments: true
 categories: rails verp bounced-emails
