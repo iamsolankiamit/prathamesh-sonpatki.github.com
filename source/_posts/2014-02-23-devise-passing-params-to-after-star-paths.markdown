@@ -45,6 +45,8 @@ end
 
 Now how to pass user's email to this path?
 
+<!-- more -->
+
 One way is to override `create` action of Devise's
 RegistrationsController. But this is bad as we will get dependent on
 current Devise implementation.
