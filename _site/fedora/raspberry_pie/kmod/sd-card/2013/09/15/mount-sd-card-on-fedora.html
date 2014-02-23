@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<! -- header.html -->
+<meta charset="utf-8">
+<title>Mount SD Card on Fedora</title>
+
+<meta name="author" content="Prathamesh Sonpatki">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="http://0.0.0.0:4000/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/syntax/syntax.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/css/style.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+
+ <link rel="alternate" type="application/rss+xml" title="" href="http://0.0.0.0:4000/feed.xml">
+
+<! -- header.html end -->
+
+
+   <body>
+   		<nav class="navbar navbar-default visible-xs" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/prathamesh-sonpatki">
+		      <i class="fa fa-github"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/_cha1tanya">
+		      <i class="fa fa-twitter"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="mailto:csonpatki@gmail.com">
+		      <i class="fa fa-envelope"></i>
+		    </a>
+		    
+			<a class="navbar-brand" href="http://0.0.0.0:4000/">
+				<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=35" class="img-circle" />
+				Prathamesh Sonpatki - Blog
+			</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="http://0.0.0.0:4000/">Home</a></li>
+			  <li><a href="http://0.0.0.0:4000/categories.html">Categories</a></li>
+  			  <li><a href="http://0.0.0.0:4000/tags.html">Tags</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
+
+       <!-- nav-menu-dropdown -->
+       <div class="btn-group hidden-xs" id="nav-menu">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://0.0.0.0:4000/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="http://0.0.0.0:4000/categories.html"><i class="fa fa-folder"></i> Categories</a></li>
+            <li><a href="http://0.0.0.0:4000/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+              <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
+          </ul>
+       </div>
+
+		<div class="col-sm-3 sidebar hidden-xs">
+			<! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="http://0.0.0.0:4000/">
+		<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="http://0.0.0.0:4000/">Prathamesh Sonpatki - Blog</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Programmer
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/prathamesh-sonpatki">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/_cha1tanya">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:csonpatki@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="http://0.0.0.0:4000/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+
+<! -- sidebar.html end -->
+
+		</div>
+
+		<div class="col-sm-9 col-sm-offset-3">
+			<article>
+	<div class="page-header">
+	  <h1>Mount SD Card on Fedora </h1>
+	</div>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   September 
+	   15th,
+	   
+	   2013
+	 </span>
+	  <div class="article_body">
+	  <p>I attended <code>Raspberry Pie</code> meetup this weekend. We had lot of fun
+there playing with Pie. After coming home, i wanted to try all those
+things on my Pie. But first step is to prepare a image for it.</p>
+
+<p>I decided to use <code>pidora</code>, the fedora remix for Raspberry Pie. Fedora
+comes with <code>fedora-arm-installer</code> package. After installing it on F19
+machine and starting it, i inserted SD card and it didn&#39;t get
+detected.</p>
+
+<p>Without SD card, i couldn&#39;t do anything. After googling, i found out
+that you have to install <code>kmod-staging</code> package. It is available as
+part of <code>rpmfusion</code> repo.</p>
+
+<!-- more -->
+
+<p>After that, next part was to find out your driver for SD card reader</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">lsusb <span class="p">|</span> grep Reader
+Bus 001 Device 005: ID 0bda:0139 Realtek Semiconductor Corp. RTS5139
+Card Reader Controller
+</code></pre></div>
+<p>So it told me that my SD card driver is RTS5139.
+Most of the google results also had same driver so i tried next step.</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">modprobe rts5139
+</code></pre></div>
+<p>And i got error that rts5139 does not exist. The issue here is the
+<code>kernel version</code> for which you install <code>kmod-staging</code> matters.
+So i needed to install the version of <code>kmod-version</code> that matches with
+my kernel version. Otherwise it won&#39;t work.</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">uname -r
+</code></pre></div>
+<p>gave me <code>3.9.8-300.fc19.x86_64</code></p>
+
+<p>Then</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">yum whatprovides <span class="se">\*</span>/rts5139.ko
+</code></pre></div>
+<p>provided list of all packages having <code>rts5139</code>.</p>
+
+<p>I found the appropriate version with my kernel</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">yum install kmod-staging-3.9.8-300.fc19.x86_64-3.9.2-2.fc19.7.x86_64
+</code></pre></div>
+<p>Then</p>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">modprobe rst5139
+</code></pre></div>
+<p>And it works and SD card gets mounted automatically. :)</p>
+
+<p>Right not <code>pidora</code> installation is going on :) I will post more about
+my Raspberry Pie experiments soon.</p>
+
+<p>Some links -</p>
+
+<p><a href="http://www.meetup.com/The-Internet-of-Things/">Arduino/Raspberry Pie meetup from Pune</a></p>
+
+<p><a href="https://github.com/iot-pune/raspberrypi">IOT tutorial for the meetup</a></p>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#fedora-ref">
+					fedora <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#raspberry_pie-ref">
+					raspberry_pie <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#kmod-ref">
+					kmod <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#sd-card-ref">
+					sd-card <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="http://0.0.0.0:4000//2013/06/30/rails-api-with-rails-3.html" title="Using `rails-api` with Rails 3">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="http://0.0.0.0:4000//2013/10/14/conditional-where-in-rails.html" title="conditional where in rails">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+			<!-- footer.html -->
+<footer>
+ <hr/>
+ <p>
+ 	&copy; 2014 Prathamesh Sonpatki with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+ </p>
+</footer>
+
+<!-- footer.html end -->
+
+
+		</div>
+
+    
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/js/app.js"></script>
+   </body>
+
+</html>
+
+

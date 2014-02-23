@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<! -- header.html -->
+<meta charset="utf-8">
+<title>jQuery append and clone</title>
+
+<meta name="author" content="Prathamesh Sonpatki">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="http://0.0.0.0:4000/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/syntax/syntax.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/css/style.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+
+ <link rel="alternate" type="application/rss+xml" title="" href="http://0.0.0.0:4000/feed.xml">
+
+<! -- header.html end -->
+
+
+   <body>
+   		<nav class="navbar navbar-default visible-xs" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/prathamesh-sonpatki">
+		      <i class="fa fa-github"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/_cha1tanya">
+		      <i class="fa fa-twitter"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="mailto:csonpatki@gmail.com">
+		      <i class="fa fa-envelope"></i>
+		    </a>
+		    
+			<a class="navbar-brand" href="http://0.0.0.0:4000/">
+				<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=35" class="img-circle" />
+				Prathamesh Sonpatki - Blog
+			</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="http://0.0.0.0:4000/">Home</a></li>
+			  <li><a href="http://0.0.0.0:4000/categories.html">Categories</a></li>
+  			  <li><a href="http://0.0.0.0:4000/tags.html">Tags</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
+
+       <!-- nav-menu-dropdown -->
+       <div class="btn-group hidden-xs" id="nav-menu">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://0.0.0.0:4000/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="http://0.0.0.0:4000/categories.html"><i class="fa fa-folder"></i> Categories</a></li>
+            <li><a href="http://0.0.0.0:4000/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+              <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
+          </ul>
+       </div>
+
+		<div class="col-sm-3 sidebar hidden-xs">
+			<! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="http://0.0.0.0:4000/">
+		<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="http://0.0.0.0:4000/">Prathamesh Sonpatki - Blog</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Programmer
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/prathamesh-sonpatki">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/_cha1tanya">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:csonpatki@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="http://0.0.0.0:4000/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+
+<! -- sidebar.html end -->
+
+		</div>
+
+		<div class="col-sm-9 col-sm-offset-3">
+			<article>
+	<div class="page-header">
+	  <h1>jQuery append and clone </h1>
+	</div>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   January 
+	   19th,
+	   
+	   2014
+	 </span>
+	  <div class="article_body">
+	  <p>I was trying to append some part of the DOM to some other element of
+the page.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;container&#39;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&#39;contacts_list&#39;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+...
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;updated_contacts&#39;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<p>On a click event, i wanted to append <code>contacts_list</code> to
+<code>updated_contacts</code>. Using jQuery and <code>append</code> method</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#updated_contacts&quot;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.contacts_list&quot;</span><span class="p">));</span>
+</code></pre></div>
+<p>But every time, the original <code>updated_contacts</code> from <code>container</code> was
+getting removed.</p>
+
+<!-- more -->
+
+<p>After searching <a href="http://api.jquery.com/append/">documentation</a> of
+<code>append</code> method, i found out that when an element is inserted to some
+other part of DOM, it is removed from the original location.</p>
+
+<blockquote>
+<blockquote>
+<p>If an element selected this way is inserted into a single location
+elsewhere in the DOM, it will be moved into the target (not cloned):</p>
+</blockquote>
+</blockquote>
+
+<p>Using <code>clone</code> method we can solve this problem.</p>
+
+<p><code>clone</code> creates a copy of the existing element and appends it to new
+location keeping original version as it is.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#updated_contacts&quot;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.contacts_list&quot;</span><span class="p">).</span><span class="nx">clone</span><span class="p">());</span>
+</code></pre></div>
+<p>Documentation of <code>clone</code> method is <a href="http://api.jquery.com/clone/">here</a></p>
+
+<blockquote>
+<blockquote>
+<p>Using <code>clone()</code> has the side-effect of producing elements with
+duplicate id attributes, which are supposed to be unique.
+Where possible, it is recommended to avoid cloning elements with this
+attribute or using class attributes as identifiers instead.</p>
+</blockquote>
+</blockquote>
+
+<p>is important point to consider while using <code>clone</code>.</p>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#jquery-ref">
+					jquery <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="http://0.0.0.0:4000//rails/minitest/2013/12/21/enable-minitest-again.html" title="enable minitest again">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="http://0.0.0.0:4000//rails/verp/bounced-emails/2014/01/19/verp-on-rails.html" title="VERP on Rails">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+			<!-- footer.html -->
+<footer>
+ <hr/>
+ <p>
+ 	&copy; 2014 Prathamesh Sonpatki with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+ </p>
+</footer>
+
+<!-- footer.html end -->
+
+
+		</div>
+
+    
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/js/app.js"></script>
+   </body>
+
+</html>
+
+

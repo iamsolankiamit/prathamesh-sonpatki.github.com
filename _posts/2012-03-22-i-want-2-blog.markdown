@@ -1,0 +1,110 @@
+---
+layout: post
+title: "i-want-2-blog"
+date: 2012-03-22 07:08
+comments: true
+tags: ['octopress','blog','ruby']
+---
+
+I was introduced to Octopress by [Vedang Manerikar](http://vedang.me) in his talk on emacs.
+I wanted to have a blog for long time but wanted something new, fresh and Octopress is just that.
+
+If you want to learn about basic rake tasks, markdown, git etc; Octopress is just for you :)
+
+<!-- more -->
+
+### Octopress : Blogging using Git, Github, Ruby
+
+Octopress is a framework designed  for [Jekyll](https://github.com/mojombo/jekyll), the blog aware static site generator powering Github Pages by [Brandon Mathis](https://github.com/imathis/).
+Detail features are available @ [here](https://github.com/imathis/octopress/)
+
+### Getting Started
+This tutorial is only for *nix like systems :D
+#### Before You Begin
+You will need to install [git](git-scm.com/) and setup your ruby enviornment
+Octopress requires Ruby 1.9.2 which you can easily install with [RVM](https://beginrescueend.com/).
+#### Get source and install initial dependancies
+
+``` sh
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.2
+```
+
+Now install dependancies
+
+``` sh
+gem install bundler
+bundle install
+```
+
+Install the default Octopress theme.
+
+``` sh
+bundle exec rake install
+```
+
+A Detailed explanation about bundler is found [here](http://gembundler.com/rationale.html)
+
+#### Configure your blog
+
+You have to change following fields from _config.yml
+
+``` text
+ url:                # For rewriting urls for RSS, etc
+ title:              # Used in the header and title tags
+ subtitle:           # A description used in the header
+ author:             # Your name, for RSS, Copyright, Metadata
+ simple_search:      # Search engine for simple site search
+ description:        # A default meta description for your site
+ subscribe_rss:      # Url for your blog's feed, defauts to /atom.xml
+ subscribe_email:    # Url to subscribe by email (service required)
+ email:              # Email address for the RSS feed if you want it.
+```
+
+#### Spice it up with twitter and other 3rd party plugins
+
+Simply fill in the configurations which are already generated like your twitter id , github handle etc;
+
+
+The Octopress layouts read these configurations and only include the javascript and html necessary for the enabled services.
+
+
+### Get started with blogging
+
+Octopress provides some [rake](http://martinfowler.com/articles/rake.html) tasks for creating new posts
+
+``` sh
+bundle exec rake new_post["title"]
+```
+
+The default file extension for new posts is markdown.
+
+This is an example from my first post
+
+``` text
+---
+layout: post
+title: "RubyConfIndia2012"
+date: 2012-03-21 03:07
+comments: true
+tags:
+---
+```
+
+#### Generate and Deploy
+
+``` text
+bundle exec rake generate   # Generates posts and pages into the public directory
+bundle exec rake watch      # Watches source/ and sass/ for changes and regenerates
+bundle exec rake preview    # Watches, and mounts a webserver at http://localhost:4000
+bundle exec rake deploy
+```
+
+### Further Reading
+
+I haven't covered all points because i don't know them :) .
+
+You can get better help @ [octopress home page](http://octopress.org/)
+
+Octopress is great asset with good documentation available so it's good tool to blog.

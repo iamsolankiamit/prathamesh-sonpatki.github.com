@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<! -- header.html -->
+<meta charset="utf-8">
+<title>jenkins on fedora with rails</title>
+
+<meta name="author" content="Prathamesh Sonpatki">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="http://0.0.0.0:4000/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/syntax/syntax.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/css/style.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+
+ <link rel="alternate" type="application/rss+xml" title="" href="http://0.0.0.0:4000/feed.xml">
+
+<! -- header.html end -->
+
+
+   <body>
+   		<nav class="navbar navbar-default visible-xs" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/prathamesh-sonpatki">
+		      <i class="fa fa-github"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/_cha1tanya">
+		      <i class="fa fa-twitter"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="mailto:csonpatki@gmail.com">
+		      <i class="fa fa-envelope"></i>
+		    </a>
+		    
+			<a class="navbar-brand" href="http://0.0.0.0:4000/">
+				<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=35" class="img-circle" />
+				Prathamesh Sonpatki - Blog
+			</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="http://0.0.0.0:4000/">Home</a></li>
+			  <li><a href="http://0.0.0.0:4000/categories.html">Categories</a></li>
+  			  <li><a href="http://0.0.0.0:4000/tags.html">Tags</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
+
+       <!-- nav-menu-dropdown -->
+       <div class="btn-group hidden-xs" id="nav-menu">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://0.0.0.0:4000/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="http://0.0.0.0:4000/categories.html"><i class="fa fa-folder"></i> Categories</a></li>
+            <li><a href="http://0.0.0.0:4000/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+              <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
+          </ul>
+       </div>
+
+		<div class="col-sm-3 sidebar hidden-xs">
+			<! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="http://0.0.0.0:4000/">
+		<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="http://0.0.0.0:4000/">Prathamesh Sonpatki - Blog</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Programmer
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/prathamesh-sonpatki">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/_cha1tanya">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:csonpatki@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="http://0.0.0.0:4000/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+
+<! -- sidebar.html end -->
+
+		</div>
+
+		<div class="col-sm-9 col-sm-offset-3">
+			<article>
+	<div class="page-header">
+	  <h1>jenkins on fedora with rails </h1>
+	</div>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   April 
+	   20th,
+	   
+	   2013
+	 </span>
+	  <div class="article_body">
+	  <p>Installing <code>jenkins</code> on <code>Fedora</code> is quite easy.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+<span class="nv">$ </span>sudo rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+<span class="nv">$ </span>sudo yum install jenkins
+<span class="nv">$ </span>sudo service jenkins start/stop/restart
+</code></pre></div>
+<!-- more -->
+
+<p>Start jenkins by</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>sudo service jenkins start
+</code></pre></div>
+<p>You will get a success message.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">Starting Jenkins                                           <span class="o">[</span>  OK  <span class="o">]</span>
+</code></pre></div>
+<p>By default jenkins starts on port 8080. Visit <code>http://localhost:8080</code>.
+You will be greeted by jenkins index page.</p>
+
+<h3>Setting up System</h3>
+
+<h4>Set <code>shell</code> for jenkins user</h4>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>sudo usermod -s /bin/bash jenkins
+</code></pre></div>
+<h4>Set <code>home</code> for jenkins user</h4>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>sudo usermod -m /var/lib/jenkins jenkins
+</code></pre></div>
+<p>Now we have to perform next steps as <code>jenkins</code> user.
+You can give superuser permissions to <code>jenkins</code> also.</p>
+
+<h4>Install RVM</h4>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>sudo su - jenkins
+<span class="nv">$ </span>curl -L https://get.rvm.io <span class="p">|</span> bash -s stable --rails --autolibs<span class="o">=</span>enabled
+</code></pre></div>
+<h5>Complete script is <a href="https://gist.github.com/prathamesh-sonpatki/5428304">here</a></h5>
+
+<h4>Load RVM</h4>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>vi /var/lib/jenkins/.bashrc
+<span class="nv">$ </span><span class="o">[</span> -s <span class="s2">&quot;/var/lib/jenkins/.rvm/scripts/rvm&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> <span class="s2">&quot;/var/lib/jenkins/.rvm/scripts/rvm&quot;</span> <span class="c"># This loads RVM into a shell session.</span>
+</code></pre></div>
+<h4>Configuring path</h4>
+
+<p>Make sure that you have configured your <code>bashrc</code> properly so that <code>PATH</code> has everything that is needed to run a Rails
+project. I spent a lot of time with <code>javascript runtime not found</code>
+error even if i had <code>nodejs</code> installed.
+Later i realized that my <code>bashrc</code> was not containing <code>path</code> to <code>node executable</code>.</p>
+
+<h3>Gitlab hooks</h3>
+
+<p>I am using Gitlab as the repository server.</p>
+
+<p>Create new key with <code>ssh-keygen</code>.</p>
+
+<h3>Gitlab plugin</h3>
+
+<h4>Install</h4>
+
+<p>From the jenkins UI, you can install gitlab plugin. More info can be found <a href="https://wiki.jenkins-ci.org/display/JENKINS/Gitlab+Hook+Plugin">here</a>.</p>
+
+<h4>Build now hook</h4>
+
+<p>Add this web hook on your Gitlab project:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">http://yourserver/gitlab/build_now
+</code></pre></div>
+<p>Now whenever there will be commit, gitlab will send a request to
+jenkins to trigger the build.</p>
+
+<h3>Build Configuration</h3>
+
+<p>We can run rake tasks, shell scripts once the build is triggered. This
+configuration can be done on the project page on jenkins server.</p>
+
+<p>I prefer running a shell script which will do <code>all</code> the steps required
+to run specs. This script can be stored into version control system
+like git so that it will be available to everyone in your project.</p>
+
+<p>I have created a sample ci script for a Rails 3.2+ project with
+PostgreSQL database
+<a href="https://gist.github.com/prathamesh-sonpatki/5516512">here</a>.</p>
+
+<h3>Post Build configuration</h3>
+
+<p>It allows to add email ids of project members who will get email after
+every build. It generates report for last build using various plugins.</p>
+
+<p>Same steps can be used with <em>CentOS</em> to setup jenkins.</p>
+
+<p>Happy hacking!</p>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#jenkins-ref">
+					jenkins <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#ci-ref">
+					ci <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#rails-ref">
+					rails <span>(5)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="http://0.0.0.0:4000//sicp/recursion/itertive-solution/2013/03/10/sicp-exercise-1-11.html" title="SICP Exercise 1-11">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="http://0.0.0.0:4000//2013/06/05/installing-racket-on-fedora.html" title="Installing racket on fedora">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+			<!-- footer.html -->
+<footer>
+ <hr/>
+ <p>
+ 	&copy; 2014 Prathamesh Sonpatki with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+ </p>
+</footer>
+
+<!-- footer.html end -->
+
+
+		</div>
+
+    
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/js/app.js"></script>
+   </body>
+
+</html>
+
+

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<! -- header.html -->
+<meta charset="utf-8">
+<title>VERP on Rails</title>
+
+<meta name="author" content="Prathamesh Sonpatki">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="http://0.0.0.0:4000/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/resources/syntax/syntax.css" rel="stylesheet">
+<link href="http://0.0.0.0:4000/assets/css/style.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+
+ <link rel="alternate" type="application/rss+xml" title="" href="http://0.0.0.0:4000/feed.xml">
+
+<! -- header.html end -->
+
+
+   <body>
+   		<nav class="navbar navbar-default visible-xs" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/prathamesh-sonpatki">
+		      <i class="fa fa-github"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="http://twitter.com/_cha1tanya">
+		      <i class="fa fa-twitter"></i>
+		    </a>
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="mailto:csonpatki@gmail.com">
+		      <i class="fa fa-envelope"></i>
+		    </a>
+		    
+			<a class="navbar-brand" href="http://0.0.0.0:4000/">
+				<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=35" class="img-circle" />
+				Prathamesh Sonpatki - Blog
+			</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="http://0.0.0.0:4000/">Home</a></li>
+			  <li><a href="http://0.0.0.0:4000/categories.html">Categories</a></li>
+  			  <li><a href="http://0.0.0.0:4000/tags.html">Tags</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
+
+       <!-- nav-menu-dropdown -->
+       <div class="btn-group hidden-xs" id="nav-menu">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://0.0.0.0:4000/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="http://0.0.0.0:4000/categories.html"><i class="fa fa-folder"></i> Categories</a></li>
+            <li><a href="http://0.0.0.0:4000/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+              <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
+          </ul>
+       </div>
+
+		<div class="col-sm-3 sidebar hidden-xs">
+			<! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="http://0.0.0.0:4000/">
+		<img src="http://www.gravatar.com/avatar/1b0973b64704738dbc8ce24d8382bb1f?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="http://0.0.0.0:4000/">Prathamesh Sonpatki - Blog</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Programmer
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/prathamesh-sonpatki">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/_cha1tanya">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:csonpatki@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="http://0.0.0.0:4000/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+
+<! -- sidebar.html end -->
+
+		</div>
+
+		<div class="col-sm-9 col-sm-offset-3">
+			<article>
+	<div class="page-header">
+	  <h1>VERP on Rails </h1>
+	</div>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   January 
+	   19th,
+	   
+	   2014
+	 </span>
+	  <div class="article_body">
+	  <p>We sent newsletter campaigns from our Rails app. One of the main
+requirement of such campaign is how many emails bounced?. We need to
+track all bounced emails and map them again to a specific campaign
+because there will be multiple campaigns going on all the time.</p>
+
+<p>To track bounced emails efficiently, we need to set unique return path
+for every recipient. This technique is called <code>Variable Envelope Return
+Path</code> or <a href="http://en.wikipedia.org/wiki/VERP">VERP</a></p>
+
+<p>Postfix supports VERP with <code>-V</code> switch. For eg.</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">sendmail.postfix -V -f bounced
+</code></pre></div>
+<p>will generate return path for <code>anyone@example.com</code> as
+<code>bounced+anyone=example.com@yourdomain.com</code>.</p>
+
+<p>If you want more control and more information like from which campaign
+this email was sent, we need to send more information in the return-path.</p>
+
+<!-- more -->
+
+<p>So it is best to generate our own return path pattern and parse it
+once it is received. We generated a pattern where return-path will
+generated from all the required information for tracking.
+This pattern was given to <code>mail</code> method as follows:</p>
+<div class="highlight"><pre><code class="ruby language-ruby" data-lang="ruby">    <span class="n">mail</span><span class="p">(</span>
+         <span class="ss">from</span><span class="p">:</span>        <span class="s1">&#39;hello@example.com&#39;</span><span class="p">,</span>
+         <span class="ss">to</span><span class="p">:</span>          <span class="s1">&#39;client@example.com&#39;</span><span class="p">,</span>
+         <span class="n">return_path</span><span class="p">:</span> <span class="n">generate_verp_pattern</span>
+        <span class="p">)</span>
+</code></pre></div>
+<p>So now the first problem was solved. We were sending unique
+return-path for every email that was going out from the system.</p>
+
+<p>Next part is to track it once it bounces and update database.</p>
+
+<p>Postfix allows piping incoming email to a particular address to a
+script. So if we pipe all incoming emails to <code>bounce@yordomain.com</code> to
+our script then we can parse the incoming address and update database.</p>
+
+<p>For this, we have to edit <code>/etc/aliases</code> (or <code>/etc/postfix/aliases</code>)file as follows:</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">bounced: <span class="s2">&quot;|/path/to/your/script&quot;</span>
+</code></pre></div>
+<p>This means all incoming emails to <code>bounced@yourdomain.com</code> will be
+piped to our script. This actually means that the whole email with
+body, headers, attachments etc is forwarded to our script.</p>
+
+<p>The <code>/etc/aliases</code> file is a text file that is used by postfix as a
+table to redirect mail for local recipients. To rebuild this table
+after a change, we need to run <code>newaliases</code> command</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">newaliases
+</code></pre></div>
+<p>This will rebuild the table for postfix. Now we have completed the
+second part of the process.</p>
+
+<p>The shell script will get the bounced email content now. There can be
+multiple bounced emails generated at the same time. So we can&#39;t
+directly pass them to rails runner scripts or rake tasks. Because that
+will kill our server by launching multiple rails instances. Instead we
+need to use some background tasks mechanism.</p>
+
+<p>We were already using <code>resque</code>, so decided to use it for bounced emails
+also. So a resque worker will actually update the database. Our script
+just has to enqueue the job for resque.</p>
+
+<p>We broke this enqueuing process into two parts.</p>
+
+<p>First - A shell script which will use correct RVM Ruby version and
+call the ruby script.</p>
+
+<p>Second - A Ruby script which will enqueue the job to resque.</p>
+
+<p>So the shell script looked like -</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash">   <span class="c">#!/bin/bash</span>
+   rvm use ruby_version@ruby_gemset
+   ruby /path/to/ruby/script
+</code></pre></div>
+<p>And Ruby script looked like</p>
+<div class="highlight"><pre><code class="ruby language-ruby" data-lang="ruby">    <span class="nb">require</span> <span class="s1">&#39;rubygems&#39;</span>
+    <span class="nb">require</span> <span class="s1">&#39;resque&#39;</span>
+
+    <span class="c1"># Adds the incoming bounced_email to background job</span>
+    <span class="k">class</span> <span class="nc">BouncedEmail</span>
+      <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+      <span class="no">Resque</span><span class="o">.</span><span class="n">enqueue_to</span><span class="p">(</span><span class="ss">:bounced_email_receiver</span><span class="p">,</span> <span class="s1">&#39;BouncedEmailReceiver&#39;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+    <span class="k">end</span>
+
+    <span class="no">BouncedEmail</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="vg">$stdin</span><span class="o">.</span><span class="n">read</span><span class="p">)</span>
+</code></pre></div>
+<p>We had to go in 2 steps here because we had multiple apps using multiple
+rubies on same server. If you have only one ruby then you can make a
+executable ruby script instead of shell script which decides which
+ruby to use.</p>
+
+<p>Now its upto resque worker to parse the content and update database.</p>
+
+<p>For that, we used <a href="https://github.com/mitio/bounce_email">bounced_email</a> gem which
+detects lot of things such as <code>bounced code</code>, <code>reason</code>, <code>type of failure</code>
+etc. As it is integrated with <code>mail</code> gem, we got the recipient
+address(<code>which was unique pattern generated by us only</code>) and were able
+to parse it to update the database. With <code>bounced_email</code> we got some
+more relevant information for free :)</p>
+
+<h4>References :</h4>
+
+<ul>
+<li>http://keakaj.com/wisdom/2007/08/08/verp-on-rails/</li>
+<li>http://blog.sosedoff.com/2011/08/10/processing-emails-with-postfix-and-rails/</li>
+<li>https://github.com/mitio/bounce_email</li>
+</ul>
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#rails-ref">
+					rails <span>(5)</span>
+					,
+				</a></li>
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#verp-ref">
+					verp <span>(1)</span>
+					,
+				</a></li>
+			 
+				<li><a href="http://0.0.0.0:4000/categories.html#bounced-emails-ref">
+					bounced-emails <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="http://0.0.0.0:4000//jquery/2014/01/19/jquery-append-and-clone.html" title="jQuery append and clone">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="http://0.0.0.0:4000//rails/devise/2014/02/23/devise-passing-params-to-after-star-paths.html" title="Devise : Passing params to after_* paths">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+			<!-- footer.html -->
+<footer>
+ <hr/>
+ <p>
+ 	&copy; 2014 Prathamesh Sonpatki with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+ </p>
+</footer>
+
+<!-- footer.html end -->
+
+
+		</div>
+
+    
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://0.0.0.0:4000/assets/js/app.js"></script>
+   </body>
+
+</html>
+
+
