@@ -18,4 +18,31 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-BASE_PATH: http://cha1tanya.com
+production_url : http://cha1tanya.com
+
+
+JB :
+  version : 0.3.0
+
+  BASE_PATH :
+
+  ASSET_PATH : false
+
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
+
+  comments :
+    provider : disqus
+    disqus :
+      short_name : mythoughtswithoctopress
+
+  analytics :
+    provider : google
+    google :
+      tracking_id : 'UA-30214248-1'
+
+  sharing :
+    provider : twitter
